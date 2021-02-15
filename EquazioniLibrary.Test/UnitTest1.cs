@@ -11,7 +11,7 @@ namespace EquazioniLibrary.Test
             double a = 6;
             bool valoreAspettato = true;
             bool ValoreRitorno = Equazioni.IsDeterminated(a);
-            Assert.AreEqual(valoreAspettato, ValoreRitorno);
+            Assert.AreEqual(valoreAspettato,ValoreRitorno);
         }
     }
 }
