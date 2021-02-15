@@ -12,7 +12,7 @@ namespace EquazioniLibrary
             }
             else
                 return false;
-            
+
         }
     }
 }
