@@ -51,6 +51,15 @@ namespace EquazioniLibrary
             }
             
         }
+        public static string EquationDegree1(double a, double b)
+        {
+            if (a == 0 && b == 0)
+                return "indeterminato";
+            else if (a == 0 && b!=0)
+                return "impossibile";
+            double x = b/ a;
+            return $"{x}";
+        }
 
     }
 }

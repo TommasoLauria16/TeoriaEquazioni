@@ -115,8 +115,32 @@ namespace EquazioniLibrary.Test
             double a = 2, b = 5, c = 2;
 
             string valoreAspettato = $"{-0.5}-{-2}";
-            string ValoreRitorno = Equazioni.Eq2Grado(a, b, c);
-            Assert.AreEqual(valoreAspettato, ValoreRitorno);
+            string valoreRitorno = Equazioni.Eq2Grado(a, b, c);
+            Assert.AreEqual(valoreAspettato, valoreRitorno);
+        }
+        [TestMethod]
+        public void TestEquazioneDiPrimoGrado1()
+        {
+            double a = 0, b = 0;
+            string valoreAspettato = "indeterminato";
+            string valoreRitorno = Equazioni.EquationDegree1(a, b);
+            Assert.AreEqual(valoreAspettato, valoreRitorno);
+        }
+        [TestMethod]
+        public void TestEquazioneDiPrimoGrado2()
+        {
+            double a = 3, b = 6;
+            string valoreAspettato = $"{2}";
+            string valoreRitorno = Equazioni.EquationDegree1(a, b);
+            Assert.AreEqual(valoreAspettato, valoreRitorno);
+        }
+        [TestMethod]
+        public void TestEquazioneDiPrimoGrado3()
+        {
+            double a = 0, b = 5;
+            string valoreAspettato = $"impossibile";
+            string valoreRitorno = Equazioni.EquationDegree1(a, b);
+            Assert.AreEqual(valoreAspettato, valoreRitorno);
         }
     }
 }
