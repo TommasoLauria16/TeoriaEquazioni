@@ -119,6 +119,15 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(valoreAspettato, valoreRitorno);
         }
         [TestMethod]
+        public void TestEquazioneSecondoCompleta3()
+        {
+            double a = 4, b = 2, c =4 ;
+
+            string valoreAspettato = $"non ha punti di intersezione";
+            string valoreRitorno = Equazioni.Eq2Grado(a, b, c);
+            Assert.AreEqual(valoreAspettato, valoreRitorno);
+        }
+        [TestMethod]
         public void TestEquazioneDiPrimoGrado1()
         {
             double a = 0, b = 0;
