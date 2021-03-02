@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquazioniLibrary.Test", "EquazioniLibrary.Test\EquazioniLibrary.Test.csproj", "{296C06C1-71D4-42B1-9870-537E6B71C577}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EquazioniLibrary.Test", "EquazioniLibrary.Test\EquazioniLibrary.Test.csproj", "{296C06C1-71D4-42B1-9870-537E6B71C577}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquazioniLibrary", "EquazioniLibrary\EquazioniLibrary.csproj", "{F80C2925-BC9C-449F-B950-F21174E0A1E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EquazioniLibrary", "EquazioniLibrary\EquazioniLibrary.csproj", "{F80C2925-BC9C-449F-B950-F21174E0A1E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaInConsole", "ProvaInConsole\ProvaInConsole.csproj", "{10AF2967-3F94-48A7-B8C9-C01A8923DA43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F80C2925-BC9C-449F-B950-F21174E0A1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F80C2925-BC9C-449F-B950-F21174E0A1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F80C2925-BC9C-449F-B950-F21174E0A1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10AF2967-3F94-48A7-B8C9-C01A8923DA43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10AF2967-3F94-48A7-B8C9-C01A8923DA43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10AF2967-3F94-48A7-B8C9-C01A8923DA43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10AF2967-3F94-48A7-B8C9-C01A8923DA43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
