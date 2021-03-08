@@ -146,10 +146,53 @@ namespace EquazioniLibrary.Test
         [TestMethod]
         public void TestEquazioneDiPrimoGrado3()
         {
-            double a = 0, b = 5;
+            double a = 9, b = 5;
             string valoreAspettato = $"impossibile";
             string valoreRitorno = Equazioni.EquationDegree1(a, b);
             Assert.AreEqual(valoreAspettato, valoreRitorno);
         }
+        [TestMethod]
+        public void TestIsConsistedArefalse()
+        {
+            int a = 8, b = 0;
+            bool risposta = Equazioni.isIncosisted(a, b);
+            Assert.IsFalse(risposta);
+        }
+        [TestMethod]
+        public void TestIsConsistedAreTrue()
+        {
+            int a = 2, b = 3;
+            bool risposta = Equazioni.isIncosisted(a, b);
+            Assert.IsTrue(risposta);
+        }
+        [TestMethod]
+        public void TestIsDegreeTrue()
+        {
+            int a = 2;
+            bool risposta = Equazioni.isDegree2(a);
+            Assert.IsTrue(risposta);
+        }
+        [TestMethod]
+        public void TestIsDegreeFalse()
+        {
+            int a = 0;
+            bool risposta = Equazioni.isDegree2(a);
+            Assert.IsFalse(risposta);
+        }
+        [TestMethod]
+        public void TestIsDeterminatedTrue()
+        {
+            int a = 3;
+            bool risposta = Equazioni.IsDeterminated(a);
+            Assert.IsTrue(risposta);
+        }
+        [TestMethod]
+        public void TestIsDeterminatedFalse()
+        {
+            int a = 0;
+            bool risposta = Equazioni.IsDeterminated(a);
+            Assert.IsFalse(risposta);
+        }
+
     }
 }
